@@ -59,7 +59,7 @@ bot = int(input("What do you want to do?\n1 - Auto views\n2 - Auto hearts\n3 - A
 chrome_options = webdriver.ChromeOptions()
 chrome_options.add_argument('--no-sandbox')
 chrome_options.add_argument('--disable-dev-shm-usage')
-driver = webdriver.Chrome(executable_path=r'C:/Users/Alessandro/Desktop/Altro/bot/chromedriver.exe',chrome_options=chrome_options)
+driver = webdriver.Chrome(service=Service(r"C:/Users/gurte/Desktop/Altro/bot/chromedriver.exe"), options=chrome_options)
 
 driver.get("https://vipto.de/")
 
